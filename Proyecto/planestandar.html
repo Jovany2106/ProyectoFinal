@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>"El Om Andante"</title>
+</head>
+    
+<body>
+  <div class="header">
+    <a href="Index.html"><img src="img/logoo.png" alt="Logotipo"></a> 
+    <div class="text-content">
+      <h1>Estudio de Yoga "El Om Andante"</h1>
+      <p>Armoniza tu cuerpo, calma tu mente, eleva tu espíritu.</p>
+    </div>
+  </div>
+    
+    <div class="topnav">
+          <a href="Index.html">Inicio</a>
+          <a href="Planes.html">Planes</a>
+        <a href="Horario.html">Horarios</a>
+          <a href="Formulario.html">Formulario clase gratis</a>
+    </div>
+
+<form action="registro_intermedio.php" method="post" class="form-intermedio">
+  <h2 class="titulo-intermedio">Registro - Plan Intermedio</h2>
+
+  <label for="nombre-intermedio">Nombre Completo:</label>
+  <input type="text" id="nombre-intermedio" name="nombre" class="input-intermedio" required>
+
+  <label for="email-intermedio">Correo Electrónico:</label>
+  <input type="email" id="email-intermedio" name="email" class="input-intermedio" required>
+
+  <label for="telefono-intermedio">Teléfono:</label>
+  <input type="tel" id="telefono-intermedio" name="telefono" class="input-intermedio" required>
+
+  <label for="direccion-intermedio">Dirección:</label>
+  <input type="text" id="direccion-intermedio" name="direccion" class="input-intermedio">
+
+  <label for="fecha-nacimiento-intermedio">Fecha de Nacimiento:</label>
+  <input type="date" id="fecha-nacimiento-intermedio" name="fecha_nacimiento" class="input-intermedio">
+
+  <label for="preferencia-intermedio">Preferencia de Clases:</label>
+  <select id="preferencia-intermedio" name="preferencia" class="input-intermedio">
+    <option value="presenciales">Presenciales</option>
+    <option value="online">En línea</option>
+  </select>
+
+  <label for="objetivo-intermedio">Objetivo Personal:</label>
+  <textarea id="objetivo-intermedio" name="objetivo" class="input-intermedio" rows="4" required></textarea>
+<center>
+  <div class="checkbox-intermedio">
+    <input type="checkbox" id="terminos-intermedio" name="terminos" required>
+    <label for="terminos-intermedio">Acepto los términos y condiciones</label>
+  </div>
+    </center>
+
+  <button type="submit" class="btn-intermedio">Registrarse</button>
+</form>
+
+    </body>
+</html>

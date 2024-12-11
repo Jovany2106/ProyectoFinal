@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto1.css">
+    <title>"El Om Andante"</title>
+</head>
+    
+<body>
+  <div class="header">
+    <a href="Index.html"><img src="img/logoo.png" alt="Logotipo"></a> 
+    <div class="text-content">
+      <h1>Estudio de Yoga "El Om Andante"</h1>
+      <p>Armoniza tu cuerpo, calma tu mente, eleva tu espíritu.</p>
+    </div>
+  </div>
+    
+    <div class="topnav">
+          <a href="Index.html">Inicio</a>
+          <a href="Planes.html">Planes</a>
+         <a href="Horario.html">Horarios</a>
+          <a href="Formulario.html" style="float.right">Formulario clase gratis</a>
+    </div>
+    
+    <div class="container">
+    <h1>Inscripción a Clases de Yoga</h1>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <div class="inline-fields">
+        <div>
+          <label for="clase">Clase:</label>
+          <select id="clase" name="clase" required>
+            <option value="">Seleccionar clase</option>
+            <option value="hatha">Yoga Hatha</option>
+            <option value="vinyasa">Yoga Vinyasa</option>
+            <option value="yin">Yoga Yin</option>
+          </select>
+        </div>
+        <div>
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+      </div>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="experiencia">Nivel de Experiencia:</label>
+      <select id="experiencia" name="experiencia" required>
+        <option value="">Seleccionar nivel</option>
+        <option value="principiante">Principiante</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="avanzado">Avanzado</option>
+      </select>
+
+      <label for="comentarios">Comentarios/Necesidades Especiales:</label>
+      <textarea id="comentarios" name="comentarios"></textarea>
+
+      <button type="submit">Inscribirse</button>
+    </form>
+  </div>
+</body>
+</html>

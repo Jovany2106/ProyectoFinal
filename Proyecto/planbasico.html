@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>"El Om Andante"</title>
+</head>
+    
+<body>
+  <div class="header">
+    <a href="Index.html"><img src="img/logoo.png" alt="Logotipo"></a> 
+    <div class="text-content">
+      <h1>Estudio de Yoga "El Om Andante"</h1>
+      <p>Armoniza tu cuerpo, calma tu mente, eleva tu espíritu.</p>
+    </div>
+  </div>
+    
+    <div class="topnav">
+          <a href="Index.html">Inicio</a>
+          <a href="Planes.html">Planes</a>
+        <a href="Horario.html">Horarios</a>
+          <a href="Formulario.html">Formulario clase gratis</a>
+    </div>
+    
+    <div class="contenedor">
+    
+    <form action="registro_basico.php" method="post" class="form-basico">
+  <h2 class="titulo-basico">Registro - Plan Básico</h2>
+  
+  <label for="nombre-basico">Nombre Completo:</label>
+  <input type="text" id="nombre-basico" name="nombre" class="input-basico" required>
+
+  <label for="email-basico">Correo Electrónico:</label>
+  <input type="email" id="email-basico" name="email" class="input-basico" required>
+
+  <label for="telefono-basico">Teléfono:</label>
+  <input type="tel" id="telefono-basico" name="telefono" class="input-basico" required>
+
+  <label for="direccion-basico">Dirección:</label>
+  <input type="text" id="direccion-basico" name="direccion" class="input-basico">
+
+  <label for="fecha-nacimiento-basico">Fecha de Nacimiento:</label>
+  <input type="date" id="fecha-nacimiento-basico" name="fecha_nacimiento" class="input-basico">
+
+  <label for="nivel-basico">Nivel de Experiencia:</label>
+  <select id="nivel-basico" name="nivel" class="input-basico">
+    <option value="principiante">Principiante</option>
+    <option value="intermedio">Intermedio</option>
+    <option value="avanzado">Avanzado</option>
+  </select>
+<center>
+  <div class="checkbox-basico">
+    <input type="checkbox" id="terminos-basico" name="terminos" required>
+    <label for="terminos-basico">Acepto los términos y condiciones</label>
+  </div>
+    </center>
+
+  <button type="submit" class="btn-basico">Registrarse</button>
+</form>
+        
+        </div>
+
+    </body>
+</html>
